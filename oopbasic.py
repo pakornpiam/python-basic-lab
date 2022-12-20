@@ -5,6 +5,8 @@ class Student:
         self.name = name
         self.age = age
         self.gender = gender
+    def study(self):
+        print(' studying.....')
 
 class Teacher:
 
@@ -12,6 +14,8 @@ class Teacher:
         self.name = name
         self.age= age
         self.subject = subject
+    def teach(self):
+        print('teacher{} teaching{}'.format(self.name,self.subject))
 
 
 if __name__ == '__main__':
@@ -23,6 +27,8 @@ if __name__ == '__main__':
 
     print(teacher1.name)
     print(teacher1.subject)
+    print('................')
+    teacher1.teach()
         
 
        
